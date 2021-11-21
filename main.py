@@ -18,7 +18,7 @@ class Window(QMainWindow):
         qp = QPainter()
         qp.begin(self)
         a = randrange(10, 450)
-        qp.setBrush(QBrush(QColor(255, 211, 0)))
+        qp.setBrush(QBrush(QColor(randrange(0, 256), randrange(0, 256), randrange(0, 256))))
         qp.drawEllipse(100, 100, a, a)
         qp.end()
 
